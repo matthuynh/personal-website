@@ -1,0 +1,77 @@
+.posts {
+    /* border: 20px #bdc3c7 solid; */
+    padding: 20px;
+    max-width: 800px;
+    width: 80%; /* the width can be at most 80% of the screen; it can be no more than 700px no matter how wide we make it */
+    margin: 20px auto; /* top+bottom , left+right */
+    margin-top: 90px;
+
+    /* This makes the font of the body 'Source Sans Pro' unless otherwise specified */
+    font-family: 'Lato', sans-serif;
+}
+
+.date {
+    text-transform: uppercase;
+    color: #3498db;
+    /* rem - just like em, but they are not set by the parent element but by the root element (body)  */
+    
+    letter-spacing: 0.2rem;
+}
+
+.blog-title {
+    color: #2c3e50;
+    font-size: 2.0rem;
+    font-family: 'Lora', serif;
+}
+
+.first-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+
+    border-left: grey 5px solid;
+    padding: 5px;
+}
+
+.body-paragraph {
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.post {
+    margin-bottom: 20px;
+}
+
+/* Found this horizontal rule code from online */
+hr {
+    overflow: visible; /* For IE */
+    padding: 0;
+    border: none;
+    border-top: medium double #333;
+    color: #333;
+    text-align: center;
+}
+
+
+/* Change color of navbar to dark green */
+.navbar-default {
+	background-image: none;
+    /* background-color: #003300 !important; */
+    background-color: #004f00 !important;
+}
+
+.dot {
+    height: 4px;
+    width: 4px;
+    background-color: #003300;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.blog-divider {
+    text-align: center;
+}
+
+.construction-note {
+    padding-top: 90px;
+    font-family: 'Lora';
+}
