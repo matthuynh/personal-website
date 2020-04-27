@@ -3,40 +3,24 @@
 	<head>
 		<title>Matt Huynh</title>
 		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    
+    <!-- Bootstrap CDN imports -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-		<link
-			rel="stylesheet"
-			href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-		/>
-
-		<!-- Font Awesome -->
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-		/>
-
-		<link rel="stylesheet" type="text/css" href="css/index-style.css" />
-		<!-- MaxCDN Links (Bootstrap, jQuery, Popper JS, JS) -->
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-
+    />
+    
+    <link rel="stylesheet" type="text/css" href="css/index.css" />
+    
 		<!-- Favicon -->
 		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 		<link rel="icon" href="favicon.ico" type="image/x-icon">
-
-		<!-- Fonts -->
-		<!-- TODO -->
-
-		<!-- Enables popovers -->
-		<!-- <script>
-			$(document).ready(function(){
-				$('[data-toggle="popover"]').popover(); 
-			});
-		</script> -->
 
 		<!-- Smooth Scrolling -->
 		<script>
@@ -47,12 +31,8 @@
 					if (this.hash !== "") {
 						// Prevent default anchor click behavior
 						event.preventDefault();
+						let hash = this.hash;
 
-						// Store hash
-						var hash = this.hash;
-
-						// Using jQuery's animate() method to add smooth page scroll
-						// The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
 						$("html, body").animate(
 							{
 								scrollTop: $(hash).offset().top
@@ -63,11 +43,12 @@
 								window.location.hash = hash;
 							}
 						);
-					} // End if
+					}
 				});
 			});
 		</script>
 
+    <!-- TODO: See if this still works -->
 		<!-- This is supposed to fix buttons on iOS which remain in "active" state after being tapped -->
 		<!-- https://discuss.appstudio.dev/t/bootstrap-button-click-in-mobile-sticks/575/5 -->
 		<script>
@@ -85,12 +66,11 @@
 
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<div class="container">
-			<!-- Navbar -->
 			<nav
-				class="navbar navbar-default navbar-expand-sm bg-dark navbar-dark fixed-top"
+				class="container navbar navbar-default navbar-expand-sm bg-dark navbar-dark fixed-top"
 			>
-				<div class="container-fluid">
-					<a class="navbar-brand" href="#section-1">Matt Huynh</a>
+				<div class="container-fluid bruh">
+					<!-- <a class="navbar-brand" href="#section-1">Home</a> -->
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -100,7 +80,7 @@
 						<span class="navbar-toggler-icon"></span>
 					</button>
 					<div class="collapse navbar-collapse">
-						<ul class="navbar-nav mr-auto">
+						<ul class="navbar-nav mr-auto justify-content-center">
 							<li class="nav-item">
 								<a
 									class="nav-link"
@@ -143,7 +123,7 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<h2 id="intro-blurb">
-						&#128075 Hello there! I'm Matt, a third-year Computer Science student studying at the University of Toronto.
+            &#128075 I'm Matt, a Software Developer based in Toronto, Canada.
 					</h2>
 					<div class="btn-group-md" id="external-buttons">
 						<a href="https://github.com/matthuynh" target="_blank"
@@ -151,7 +131,7 @@
 								type="button"
 								class="btn btn-outline-success mr-1"
 							>
-								<i class="fab fa-github"></i></button
+								<i class="fab fa-github"></i> GitHub</button
 						></a>
 						<a
 							href="https://www.linkedin.com/in/mattrh/"
@@ -160,22 +140,21 @@
 								type="button"
 								class="btn btn-outline-success mr-1"
 							>
-								<i class="fab fa-linkedin-in"></i></button
+								<i class="fab fa-linkedin-in"></i> LinkedIn</button
 						></a>
-						<!-- <button type="button" class="btn btn-outline-secondary mr-1" data-toggle="popover" data-trigger="hover" title="Email" data-content="matt.huynh@mail.utoronto.ca"><i class="fas fa-envelope"></i></button> -->
-						<a href="mailto:matt.huynh@mail.utoronto.ca"
+						<!-- <a href="mailto:matt.huynh@mail.utoronto.ca"
 							><button
 								type="button"
 								class="btn btn-outline-success mr-1"
 							>
 								<i class="fas fa-envelope"></i></button
-						></a>
+						></a> -->
 						<a href="https://devpost.com/matthuynh"
 							><button
 								type="button"
 								class="btn btn-outline-success mr-1"
 							>
-								<i class="fas fa-flag"></i></button
+								<i class="fas fa-flag"></i> DevPost</button
 						></a>
 					</div>
 
@@ -189,7 +168,6 @@
 					</div> -->
 
 					<br />
-					<hr />
 				</div>
 			</div>
 		</div>
@@ -280,200 +258,6 @@
 			</div>
 		</div>
 
-		<div class="container anchor" id="section-3">
-			<h2>Projects</h2>
-			<p class="text-left">Below are a mix of personal and school projects. Each card is clickable!</p>
-
-			<div class="row">
-				<div class="col-sm-12 col-lg-6 mb-4 align-items-stretch d-flex">
-					<div class="card">
-						<!-- <img class="card-img-top img-fliud" src="./images/shrinkly-screenshot.PNG" alt="Shrinkly Homepage Screenshot"> -->
-						<div class="card-body">
-							<a href="https://github.com/matthuynh/url-shortener/blob/master/README.md" target="_blank"><h5 class="card-title text-center">Shrinkly - A URL shortener</h5></a>
-							<h6 class="card-subtitle mb-2 text-muted text-center">JavaScript, MongoDB, Express.js, ReactJS, Node.js, Bulma</h6>
-							<p class="card-text">
-								Worked with a partner to develop a full-stack URL shortener service that allows a user to input long URLs to create their own custom short URL. The service is very similar to other services such as bit.ly and tinyurl.cc. The application was built with the MERN JavaScript stack (MongoDB, Express.js, ReactJS, Node.js). The application is styled with Bulma.
-								<br />
-								The application is currently being hosted on Heroku, and can be visited at <a href="https://shrinkly-url-shortener.herokuapp.com" target="_blank">this link!</a> Note that the application may take a few moments to initially load up as we are currently using Heroku's free student plan.
-							</p>
-							<div class="row justify-content-center"><a href="https://shrinkly-url-shortener.herokuapp.com" target="_blank" class="btn btn-success">Try it out!</a></div>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">2020 Winter</small>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-12 col-lg-6 mb-4 align-items-stretch d-flex">
-					<div class="card">
-						<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-						<div class="card-body">
-							<a href="https://github.com/matthuynh/shuttle-time-finder/blob/master/README.md" target="_blank"><h5 class="card-title text-center">UofT Shuttle Bus Scheduler</h5></a>
-							<h6 class="card-subtitle mb-2 text-muted text-center">JavaScript, MongoDB, Express.js, Pug.js, Node.js, Python</h6>
-							<p class="card-text">
-								Developed a full-stack shuttle bus scheduler web application that allows a user to provide their current location and a desired departure time to plan out a UofT Shuttle Bus trip. Used Node.js with Express.js to provide logic and handle endpoints, as well as implement connectivity with MongoDB to retrieve bus time data. Utilized the Google Directions REST API in order to retrieve trip data such as estimated walk. Wrote a Python script that retrieves data from a UofT website and stores it into a Mongo database.
-							</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">2019 Fall</small>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-12 col-lg-6 mb-4 align-items-stretch d-flex">
-					<div class="card">
-						<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-						<div class="card-body">
-							<a href="https://drive.google.com/drive/folders/1acObF1IgHYq6ZB2oug6lRLs-XfZrmnzW" target="_blank"><h5 class="card-title text-center">Paint</h5></a>
-							<h6 class="card-subtitle mb-2 text-muted text-center">Java, JavaFX</h6>
-							<p class="card-text">
-								Built in Java using the JavaFX framework, this program allows you to create drawings and pre-defined shapes on a canvas, similar to Microsoft Paint. Object-oriented design was closely followed, employing MVC and design patterns such as the Command and Strategy design pattern. I worked with a team of four, employing version control software such as Git and Agile project management strategies such as Scrum in order to ensure effective team collaboration.
-							</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">2018 Fall</small>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-12 col-lg-6 mb-4 align-items-stretch d-flex">
-					<div class="card">
-						<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-						<div class="card-body">
-							<a href="https://github.com/RRadiance/VersionBeta2/blob/master/README.md" target="_blank"><h5 class="card-title text-center">Financial Stock Screener</h5></a>
-							<h6 class="card-subtitle mb-2 text-muted text-center">Java, JavaFX, SQLite</h6>
-							<p class="card-text">
-								This is a Java desktop application that is capable of displaying time series data and technical indicators of a stock. The GUI was built with JavaFX, and the AlphaVantage API was used to retrieve stock data, which is then categorized efficiently and stored in a local SQLite database.
-							</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">2018 Fall</small>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-12 col-lg-6 mb-4 align-items-stretch d-flex">
-					<div class="card">
-						<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-						<div class="card-body">
-							<a href="#section-1" ><h5 class="card-title text-center">This website!</h5></a>
-							<h6 class="card-subtitle mb-2 text-muted text-center">HTML5, CSS3, JavaScript, Bootstrap 4</h6>
-							<p class="card-text">
-								This website is built with HTML, CSS, and JavaScript. I also used the Bootstrap component library for much of the styling on the website. The website is currently hosted on Google App Engine.
-							</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">2019 Summer</small>
-						</div>
-					</div>
-				</div>
-
-				
-				<div class="col-sm-12 col-lg-6 mb-4 align-items-stretch d-flex">
-					<div class="card">
-						<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-						<div class="card-body">
-							<a href="https://drive.google.com/drive/folders/1vqkFZDecQOzq_ELT7zhdGNf91dkj7U9G" target="_blank"><h5 class="card-title text-center">File Compressor</h5></a>
-							<h6 class="card-subtitle mb-2 text-muted text-center">Python</h6>
-							<p class="card-text">
-								Built in Python, this program uses Huffman's algorithm to compress files. Files that were previouslly compressed with this algorithm can also be decompressed.
-							</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">2018 Winter</small>
-						</div>
-					</div>
-				</div>
-
-				<div class="col-sm-12 col-lg-6 mb-4 align-items-stretch d-flex">
-					<div class="card">
-						<!-- <img class="card-img-top" src="..." alt="Card image cap"> -->
-						<div class="card-body">
-								<a href="https://github.com/matthuynh/nasdaq-webscraper" target="_blank"><h5 class="card-title text-center">NASDAQ Webscraper</h5></a>
-								<h6 class="card-subtitle mb-2 text-muted text-center">Python</h6>
-							<p class="card-text">
-								Used the BeautifulSoup module (HTML document parser) in Python to create a webscraper that is capable of gathering income statement data of any stock on the NASDAQ website
-							</p>
-						</div>
-						<div class="card-footer">
-							<small class="text-muted">2018 Summer</small>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Site footer adapted from https://codepen.io/scanfcode/pen/MEZPNd-->
-		<footer class="site-footer">
-			<div class="container" id="section-4">
-				<div class="row">
-					<div class="col-sm-12 col-md-6">
-						<h2>Contact Me</h2>
-						<p class="text-justify">
-							There are many ways to contact me. Click on the
-							links to the right.
-						</p>
-					</div>
-
-					<div class="col-sm-12 col-md-6">
-						<div class="row">
-							<div class="col-sm-6">
-								<h4>Site</h4>
-								<ul class="footer-links">
-									<li>
-										<a href="#section-1">Home</a>
-									</li>
-									<li>
-										<a href="#section-2">About</a>
-									</li>
-									<li>
-										<a href="#section-3">Projects</a>
-									</li>
-									<li>
-										<a href="ta.html">TA Resources</a>
-									</li>
-									<li>
-										<a href="blog.html">Blog</a>
-									</li>
-								</ul>
-							</div>
-
-							<div class="col-sm-6">
-								<h4>Links</h4>
-								<ul class="footer-links">
-									<li>
-										<a
-											href="https://www.linkedin.com/in/mattrh/"
-											target="_blank"
-											>LinkedIn</a
-										>
-									</li>
-									<li>
-										<a
-											href="https://github.com/matthuynh"
-											target="_blank"
-											>GitHub</a
-										>
-									</li>
-									<li>
-										<a
-											href="mailto:matt.huynh@mail.utoronto.ca"
-											>matt.huynh[at]mail.utoronto.ca</a
-										>
-									</li>
-									<li>
-										<a
-											href="https://devpost.com/matthuynh"
-											target="_blank"
-											>DevPost</a
-										>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</footer>
+	
 	</body>
 </html>

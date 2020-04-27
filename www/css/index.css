@@ -1,19 +1,17 @@
-.fakeimg {
-	height: 200px;
-	background: #aaa;
-}
-
 body {
-	/* padding-top: 65px; */
-	background-color: #fafafa;
+	background-color: #231F20;
+	color: #FFFFFF;
 }
 
-hr {
-	border: 0;
-	height: 1px;
-	width: 40%;
-	background: #333;
-	background-image: linear-gradient(to right, #ccc, #333, #ccc);
+.navbar-default {
+	max-width: 900px;
+	background-image: none;
+	background-color: #231F20 !important;
+}
+
+/* Gives extra padding to anchor elements -- compensates for the fixed navbar behaviour */
+.anchor {
+	padding-top: 90px;
 }
 
 #external-buttons {
@@ -32,7 +30,13 @@ hr {
 
 #section-1 {
     text-align: center;
-    margin-top: 65px;
+	margin-top: 65px;
+	max-width: 900px;
+}
+
+#section-2 {
+	/* margin-top: 65px; */
+	max-width: 900px;
 }
 
 #section-3 {
@@ -89,18 +93,6 @@ ul.timeline > li:before {
 	width: 20px;
 	height: 20px;
 	z-index: 400;
-}
-
-/* Change color of navbar to dark green */
-.navbar-default {
-	background-image: none;
-	/* background-color: #003300 !important; */
-	background-color: #004f00 !important;
-}
-
-/* Gives extra padding to anchor elements -- compensates for the fixed navbar behaviour */
-.anchor {
-	padding-top: 90px;
 }
 
 /* Fix for buttons stuck in "active" state on iOS after being tapped on */
