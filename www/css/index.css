@@ -9,28 +9,65 @@ body {
 	background-color: #231F20 !important;
 }
 
+/* Make navbar transparent for mobile viewports */
+@media only screen and (max-width: 480px) {
+	.navbar-collapse {
+		background-color: #3b3335;
+	}
+	.navbar-toggler {
+		background-color: #3b3335;
+	}
+	.mobile-navbar {
+		background-color: transparent !important;
+	}
+	#mobile-navbar-items-top {
+		background-color: #3b3335;
+		padding: 20px;
+		margin-right: 70%;
+		border-radius: 0px 20px 0px 0px;
+	}
+	#mobile-navbar-items-bottom {
+		background-color: #3b3335;
+		padding: 20px;
+		margin-top: -30px;
+		margin-right: 70%;
+		border-radius: 0px 0px 20px 20px;
+	}
+}
+
 /* Gives extra padding to anchor elements -- compensates for the fixed navbar behaviour */
 .anchor {
 	padding-top: 90px;
 }
 
+#intro-blurb {
+	margin-bottom: 20px;
+}
+
 #external-buttons {
-	margin: 30px auto 5px;
+	margin-top: 30px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 5px;
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
 }
 
-#resume-button {
-	margin: 5px auto 5px;
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+.btn {
+	padding-left: 1.5rem;
+	padding-right: 1.5rem;
+}
+
+.btn:hover {
+	border-color: #004d1d;
+	background-color: #004d1d;
 }
 
 #section-1 {
-    text-align: center;
+	text-align: center;
 	margin-top: 65px;
+	padding-top: 130px;
 	max-width: 900px;
 }
 
@@ -39,28 +76,13 @@ body {
 	max-width: 900px;
 }
 
-#section-3 {
-    padding-bottom: 120px;
-}
-
-#intro-blurb {
-	margin: 40px auto 50px;
-}
-
-/* .btn {
-    color: #3ebf2a;
-} */
-
-/* Re-size intro-blurb font size on mobile devices */
-/* @media only screen and (max-width: 480px) {
-	#intro-blurb {
-		font-size: 24px;
-	}
-} */
-
 /* Timeline CSS */
-#timeline-text {
+.timeline-text {
 	display: inline;
+}
+
+.timeline-title {
+	padding-left: 20px;
 }
 
 ul.timeline {
@@ -87,72 +109,9 @@ ul.timeline > li:before {
 	display: inline-block;
 	position: absolute;
 	border-radius: 50%;
-    /* border: 3px solid #22c0e8; */
-    border: 3px solid #3ebf2a;
+    border: 3px solid #5cb85c;
 	left: 20px;
 	width: 20px;
 	height: 20px;
 	z-index: 400;
 }
-
-/* Fix for buttons stuck in "active" state on iOS after being tapped on */
-.mobileHoverFix:hover .mobileHoverFix.hover {
-  background-color: #337ab7;
-}
-
-
-/* Footer stuff */
-.site-footer {
-	/* background: #003300; */
-	background: #004f00;
-	padding: 45px 0 20px;
-	font-size: 15px;
-	line-height: 24px;
-	/* color: #737373; text color */
-	color: #a3a3a3;
-}
-.site-footer hr {
-	border-top-color: #bbb;
-	opacity: 0.5;
-}
-.site-footer hr.small {
-	margin: 20px 0;
-}
-
-.site-footer h2 {
-    color: #fff;
-}
-
-.site-footer h4 {
-	color: #fff;
-	margin-top: 5px;
-}
-.site-footer a {
-	/* color: #737373; */
-	color: #a3a3a3;
-}
-.site-footer a:hover {
-	color: #3366cc;
-	text-decoration: none;
-}
-.footer-links {
-	padding-left: 0;
-	list-style: none;
-}
-.footer-links li {
-	display: block;
-}
-.footer-links a {
-	/* color: #737373; */
-	color: #a3a3a3;
-}
-.footer-links a:active,
-.footer-links a:focus,
-.footer-links a:hover {
-	color: #3366cc;
-	text-decoration: none;
-}
-.footer-links.inline li {
-	display: inline-block;
-}
-

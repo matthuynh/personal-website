@@ -3,74 +3,49 @@
 	<head>
 		<title>Matt Huynh</title>
 		<meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    
-    <!-- Bootstrap CDN imports -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<!-- Bootstrap CDN imports -->
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+			crossorigin="anonymous"
+		/>
+		<script
+			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+			crossorigin="anonymous"
+		></script>
+		<script
+			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+			crossorigin="anonymous"
+		></script>
 
 		<link
 			rel="stylesheet"
 			href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-    />
-    
-    <link rel="stylesheet" type="text/css" href="css/index.css" />
-    
+		/>
+
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+
 		<!-- Favicon -->
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-		<link rel="icon" href="favicon.ico" type="image/x-icon">
-
-		<!-- Smooth Scrolling -->
-		<script>
-			$(document).ready(function() {
-				// Add smooth scrolling to all links
-				$("a").on("click", function(event) {
-					// Make sure this.hash has a value before overriding default behavior
-					if (this.hash !== "") {
-						// Prevent default anchor click behavior
-						event.preventDefault();
-						let hash = this.hash;
-
-						$("html, body").animate(
-							{
-								scrollTop: $(hash).offset().top
-							},
-							400,
-							function() {
-								// Add hash (#) to URL when done scrolling (default click behavior)
-								window.location.hash = hash;
-							}
-						);
-					}
-				});
-			});
-		</script>
-
-    <!-- TODO: See if this still works -->
-		<!-- This is supposed to fix buttons on iOS which remain in "active" state after being tapped -->
-		<!-- https://discuss.appstudio.dev/t/bootstrap-button-click-in-mobile-sticks/575/5 -->
-		<script>
-			$(".btn").on("click", function() {
-				$(this).blur();
-			});
-			$(".btn").on("touchstart", function() {
-				$(this).removeClass("mobileHoverFix");
-			});
-			$(".btn").on("touchend", function() {
-				$(this).addClass("mobileHoverFix");
-			});
-		</script>
+		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	</head>
 
 	<body data-spy="scroll" data-target=".navbar" data-offset="50">
 		<div class="container">
 			<nav
-				class="container navbar navbar-default navbar-expand-sm bg-dark navbar-dark fixed-top"
+				class="container navbar mobile-navbar navbar-default navbar-expand-sm bg-dark navbar-dark fixed-top"
 			>
-				<div class="container-fluid bruh">
-					<!-- <a class="navbar-brand" href="#section-1">Home</a> -->
+				<div class="container-fluid">
 					<button
 						class="navbar-toggler"
 						type="button"
@@ -79,42 +54,48 @@
 					>
 						<span class="navbar-toggler-icon"></span>
 					</button>
-					<div class="collapse navbar-collapse">
+					<div class="collapse navbar-collapse" id="mobile-navbar-items-top">
 						<ul class="navbar-nav mr-auto justify-content-center">
 							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="#section-2"
+								<a class="nav-link" href="./index.html"
 									>About</a
 								>
 							</li>
 							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="#section-3"
-									>Projects</a
-								>
+								<a class="nav-link" href="">Portfolio</a>
 							</li>
 							<li class="nav-item">
-								<a
-									class="nav-link"
-									href="#section-4"
-									>Contact</a
-								>
+								<a class="nav-link" href="">Contact</a>
 							</li>
 						</ul>
 					</div>
 				</div>
 
-				<div class="collapse navbar-collapse collapse w-100 order-3 dual-collapse2">
-					<ul class="navbar-nav ml-auto">
-						<li class="nav-item">
-							<a class="nav-link" href="ta.html">TA Resources</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="blog.html">Blog</a>
-						</li>
-					</ul>
+				<div class="container-fluid">
+					<div
+            class="collapse navbar-collapse collapse w-100 order-3 dual-collapse2"
+            id="mobile-navbar-items-bottom"
+					>
+						<ul class="navbar-nav ml-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="blog.html">Blog</a>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									href="https://www.github.com/matthuynh"
+									>GitHub</a
+								>
+							</li>
+							<li class="nav-item">
+								<a
+									class="nav-link"
+									href="https://www.linkedin.com/in/matthuynh"
+									>LinkedIn</a
+								>
+							</li>
+						</ul>
+					</div>
 				</div>
 			</nav>
 		</div>
@@ -123,15 +104,20 @@
 			<div class="row">
 				<div class="col-sm-12">
 					<h2 id="intro-blurb">
-            &#128075 I'm Matt, a Software Developer based in Toronto, Canada.
+						👋 I'm Matt, a Software Developer based in Toronto,
+						Canada
 					</h2>
+
+					<h3>
+						Let's make something cool.
+					</h3>
 					<div class="btn-group-md" id="external-buttons">
 						<a href="https://github.com/matthuynh" target="_blank"
 							><button
 								type="button"
 								class="btn btn-outline-success mr-1"
 							>
-								<i class="fab fa-github"></i> GitHub</button
+								<i class="fab fa-github"></i></button
 						></a>
 						<a
 							href="https://www.linkedin.com/in/mattrh/"
@@ -140,124 +126,86 @@
 								type="button"
 								class="btn btn-outline-success mr-1"
 							>
-								<i class="fab fa-linkedin-in"></i> LinkedIn</button
+								<i class="fab fa-linkedin-in"></i></button
 						></a>
-						<!-- <a href="mailto:matt.huynh@mail.utoronto.ca"
-							><button
-								type="button"
-								class="btn btn-outline-success mr-1"
-							>
-								<i class="fas fa-envelope"></i></button
-						></a> -->
 						<a href="https://devpost.com/matthuynh"
 							><button
 								type="button"
 								class="btn btn-outline-success mr-1"
 							>
-								<i class="fas fa-flag"></i> DevPost</button
+								<i class="fas fa-flag"></i></button
 						></a>
 					</div>
-
-					<!-- <div class="btn-group-md" id="resume-button">
-						<button
-							type="button"
-							class="btn btn-outline-secondary mr-1"
-						>
-							<i class="fas fa-paperclip"></i> Resume
-						</button>
-					</div> -->
-
-					<br />
 				</div>
 			</div>
 		</div>
 
 		<div class="container anchor" id="section-2">
-			<h2>About</h2>
-			<p>		
-				Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
-			</p>
 			<div class="row">
 				<div class="container mt-5 mb-5">
-					<div class="row">
-						<div class="col-md-6">
-							<h4>Experience</h4>
-							<ul class="timeline">
-								<li>
-									<p
-										id="timeline-text"
-										class="font-weight-bold"
-									>
-										Position at Company
-									</p>
-									<p class="font-italic">
-										Date Year - Date Year
-									</p>
-									<p>
-										Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.
-									</p>
-									<p>
-										Efficiently unleash cross-media information without cross-media value. Quickly maximize timely deliverables for real-time schemas. Dramatically maintain clicks-and-mortar solutions without functional solutions.
-									</p>
-								</li>
-								<li>
-									<p
-										id="timeline-text"
-										class="font-weight-bold"
-									>
-										Position at Company
-									</p>
-									<br />
-									<br />
-									<p class="font-italic">
-										Date Year - Date Year
-									</p>
-									<p>
-										Objectively innovate empowered manufactured products whereas parallel platforms. Holisticly predominate extensible testing procedures for reliable supply chains. Dramatically engage top-line web services vis-a-vis cutting-edge deliverables.
-									</p>
-									<br />
-									<p class="font-italic">
-										Date Year - Date Year
-									</p>
-									<p>
-										Proactively envisioned multimedia based expertise and cross-media growth strategies. Seamlessly visualize quality intellectual capital without superior collaboration and idea-sharing. Holistically pontificate installed base portals after maintainable products.
-									</p>
-									<br />
-									<p class="font-italic">
-										Date Year - Present
-									</p>
-									<p>
-										Phosfluorescently engage worldwide methodologies with web-enabled technology. Interactively coordinate proactive e-commerce via process-centric "outside the box" thinking. Completely pursue scalable customer service through sustainable potentialities.
-									</p>
-								</li>
-							</ul>
-						</div>
-						<div class="col-md-6">
-							<h4>Education</h4>
-							<ul class="timeline">
-								<li>
-									<p
-										id="timeline-text"
-										class="font-weight-bold"
-									>
-										University, Degree
-									</p>
-									<p class="font-italic">
-										Date
-									</p>
-									<p>
-										Podcasting operational change management inside of workflows to establish a framework. Taking seamless key performance indicators offline to maximise the long tail. Keeping your eye on the ball while performing a deep dive on the start-up mentality to derive convergence on cross-platform integration.
-
-										Collaboratively administrate empowered markets via plug-and-play networks. Dynamically procrastinate B2C users after installed base benefits. Dramatically visualize customer directed convergence without revolutionary ROI.
-									</p>
-								</li>
-							</ul>
-						</div>
-					</div>
+					<h4 class="timeline-title">Experience</h4>
+					<ul class="timeline">
+						<li>
+							<p class="font-weight-bold timeline-text">
+								Software Engineer Intern at Veeva
+							</p>
+							<p class="font-italic">
+								May 2020 - present
+							</p>
+						</li>
+						<li>
+							<p class="font-weight-bold timeline-text">
+								Automation Engineer Intern at Manulife
+							</p>
+							<p class="font-italic">
+								May 2019 - Aug 2019
+							</p>
+							<p>
+								Developed features for and maintained an
+								internal automation testing framework built with
+								Java and Selenium. Created testing framework for
+								internal DevOps dashboard application with
+								JavaScript.
+							</p>
+						</li>
+						<li>
+							<p class="font-weight-bold timeline-text">
+								Teaching Assistant at UofT
+							</p>
+							<p class="font-italic">
+								Jan 2019 - Apr 2020
+							</p>
+							<p>
+								TA'd for various Computer Science courses
+								including CSC108 (Introduction to Computer
+								Programming), CSC148 (Introduction to Computer
+								Science), and CSC207 (Software Design).
+							</p>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="row">
+				<div class="container mt-5 mb-5">
+					<h4 class="timeline-title">Education</h4>
+					<ul class="timeline">
+						<li>
+							<p class="font-weight-bold timeline-text">
+								University of Toronto, Computer Science
+							</p>
+							<p class="font-italic">
+								2017 - 2022 (anticipated)
+							</p>
+							<p>
+								Anticipated HBSc with a Specialist in Computer
+								Science, cGPA 3.66/4.00. Currently listed as a
+								2017-2018 Dean's List Scholar, 2018-2019 Dean's
+								List Scholar.
+							</p>
+						</li>
+					</ul>
 				</div>
 			</div>
 		</div>
-
-	
 	</body>
 </html>
