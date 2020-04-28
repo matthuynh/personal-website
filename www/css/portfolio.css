@@ -1,0 +1,101 @@
+body {
+	background-color: #231F20;
+	color: #FFFFFF;
+}
+
+.navbar-default {
+	max-width: 900px;
+	background-image: none;
+	background-color: #231F20 !important;
+}
+
+.nav-item a.active {
+	color: white;
+}
+
+/* Make navbar transparent for mobile viewports */
+@media only screen and (max-width: 575px) {
+	.navbar-collapse {
+		background-color: #3b3335;
+	}
+	.navbar-toggler {
+		background-color: #3b3335;
+	}
+	.mobile-navbar {
+		background-color: transparent !important;
+	}
+	#mobile-navbar-items-top {
+		background-color: #3b3335;
+		padding: 20px;
+		margin-right: 70%;
+		border-radius: 0px 20px 0px 0px;
+	}
+	#mobile-navbar-items-bottom {
+		background-color: #3b3335;
+		padding: 20px;
+		margin-top: -30px;
+		margin-right: 70%;
+		border-radius: 0px 0px 20px 20px;
+	}
+}
+
+.portfolio-item {
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+#section-1 {
+	padding-top: 100px;
+	/* padding-bottom: 65px; */
+	max-width: 900px;
+}
+
+#section-2 {
+	/* margin-top: 65px; */
+	max-width: 900px;
+}
+
+.mobile-picture {
+	padding-top: 20px;
+}
+
+#harmoney-screenshot {
+	max-height: 400px;
+}
+
+@media only screen and (max-width: 575px) {
+	.mobile-picture {
+		/* width: 90%; */
+		text-align: center;
+		padding-bottom: 20px;
+	}
+}
+
+h4 {
+	vertical-align: middle;
+}
+
+.badge {
+	padding-top: 4px;
+	padding-bottom: 4px;
+	font-size: 14px;
+}
+
+.date-badge {
+	background-color: #004d1d;
+	vertical-align: middle;
+	margin-right: 50px;
+	margin-top: 2px;
+	float: right;
+}
+
+span.emoji {
+	font-size: 100px;
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	width: 70%;
+    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+}

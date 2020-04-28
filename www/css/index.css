@@ -3,14 +3,23 @@ body {
 	color: #FFFFFF;
 }
 
+/* Gives extra padding to anchor elements -- compensates for the fixed navbar behaviour */
+.anchor {
+	padding-top: 90px;
+}
+
 .navbar-default {
 	max-width: 900px;
 	background-image: none;
 	background-color: #231F20 !important;
 }
 
+.nav-item a.active {
+	color: white;
+}
+
 /* Make navbar transparent for mobile viewports */
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 575px) {
 	.navbar-collapse {
 		background-color: #3b3335;
 	}
@@ -33,11 +42,6 @@ body {
 		margin-right: 70%;
 		border-radius: 0px 0px 20px 20px;
 	}
-}
-
-/* Gives extra padding to anchor elements -- compensates for the fixed navbar behaviour */
-.anchor {
-	padding-top: 90px;
 }
 
 #intro-blurb {
@@ -115,3 +119,4 @@ ul.timeline > li:before {
 	height: 20px;
 	z-index: 400;
 }
+
