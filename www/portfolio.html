@@ -5,37 +5,14 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 
-		<!-- Bootstrap CDN imports -->
 		<link
 			rel="stylesheet"
 			href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
 			integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
 			crossorigin="anonymous"
 		/>
-		<script
-			src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-			integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-			integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
-			crossorigin="anonymous"
-		></script>
-		<script
-			src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-			integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
-			crossorigin="anonymous"
-		></script>
-
-		<link
-			rel="stylesheet"
-			href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
-		/>
 
 		<link rel="stylesheet" type="text/css" href="css/portfolio.css" />
-
-		<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 	</head>
 
@@ -60,14 +37,14 @@
 					>
 						<ul class="navbar-nav mr-auto justify-content-center">
 							<li class="nav-item">
-								<a class="nav-link" href="./index.html"
+								<a class="nav-link" href="index"
 									>About</a
 								>
 							</li>
 							<li class="nav-item">
 								<a
 									class="nav-link active"
-									href="./portfolio.html"
+									href="portfolio"
 									>Portfolio</a
 								>
 							</li>
@@ -82,12 +59,13 @@
 					>
 						<ul class="navbar-nav ml-auto">
 							<li class="nav-item">
-								<a class="nav-link" href="blog.html">Blog</a>
+								<a class="nav-link" href="blog">Blog</a>
 							</li>
 							<li class="nav-item">
 								<a
 									class="nav-link"
 									href="https://www.github.com/matthuynh"
+									target="_blank"
 									>GitHub</a
 								>
 							</li>
@@ -95,6 +73,7 @@
 								<a
 									class="nav-link"
 									href="https://www.linkedin.com/in/matthuynh"
+									target="_blank"
 									>LinkedIn</a
 								>
 							</li>
@@ -117,17 +96,16 @@
 				<div class="col col-sm-6 text-center">
 					<div class="row">
 						<img
-						src="./images/collabcloud-1.png"
-						class="img-fluid"
-						alt="..."
-					/>
-					<img
-						src="./images/collabcloud-2.png"
-						class="img-fluid"
-						alt="..."
-					/>
+							src="./images/collabcloud-1.png"
+							class="img-fluid"
+							alt="collabcloud-landing-page"
+						/>
+						<img
+							src="./images/collabcloud-2.png"
+							class="img-fluid"
+							alt="collabcloud-dashboard"
+						/>
 					</div>
-					
 				</div>
 				<div class="col-auto col-sm-6">
 					<h4>
@@ -141,10 +119,22 @@
 						a social networking platform for developers
 					</h6>
 					<p>
-						CollabCloud lets you link your GitHub repos to the platform, allowing you to advertise your project to recruit other users on the platform to join your project. Users may interact with each other through real-time messaging, forum posts, and notifications. The platform also suggests projects to users based on their programming language preferences.
+						CollabCloud lets you link your GitHub repos to the
+						platform, allowing you to advertise your project to
+						recruit other users on the platform to join your
+						project. Users may interact with each other through
+						real-time messaging, forum posts, and notifications. The
+						platform also suggests projects to users based on their
+						programming language preferences.
 					</p>
 					<p>
-						CollabCloud was initially developed over a four-month period by a group of seven developers as part of a project-based course. Development is still ongoing today. I took on a leadership role in this project as a Scrum Master, implementing effective project management practices that kept the development process running smoothly. 
+						CollabCloud was initially developed over a four-month
+						period by a group of seven developers as part of a
+						project-based course. Development is still ongoing
+						today. I took on a leadership role in this project as a
+						Scrum Master, implementing effective project management
+						practices that kept the development process running
+						smoothly.
 					</p>
 					<p>
 						View the source code
@@ -179,7 +169,6 @@
 						<span class="badge badge-secondary font-weight-normal"
 							>GitHub API</span
 						>
-
 					</p>
 				</div>
 			</div>
@@ -192,7 +181,7 @@
 						id="harmoney-screenshot"
 						src="./images/harmoney.png"
 						class="mobile-picture img-fluid"
-						alt="..."
+						alt="harmoney-screenshot"
 					/>
 				</div>
 				<div class="col-auto col-sm-6">
@@ -207,7 +196,15 @@
 						a payments splitting application
 					</h6>
 					<p>
-						Harmoney was developed over a 48 hour period at UofT Hacks 2020. It is a prototype mobile application that allows users to join a shared room with others to split group payments. Some use cases for this application include splitting e-transfers, splitting recurring bill payments, and pooling in money. The front-end was developed with React Native. User authentication is implemented using Passport.js, and user data is stored in a MongoDB instance. 
+						Harmoney was developed over a 48 hour period at UofT
+						Hacks 2020. It is a prototype mobile application that
+						allows users to join a shared room with others to split
+						group payments. Some use cases for this application
+						include splitting e-transfers, splitting recurring bill
+						payments, and pooling in money. The front-end was
+						developed with React Native. User authentication is
+						implemented using Passport.js, and user data is stored
+						in a MongoDB instance.
 					</p>
 					<p>
 						View the source code
@@ -241,7 +238,7 @@
 					<img
 						src="./images/shrinkly.png"
 						class="mobile-picture img-fluid"
-						alt="..."
+						alt="shrinkly-homepage"
 					/>
 				</div>
 				<div class="col-auto col-sm-6">
@@ -256,14 +253,23 @@
 						a URL shortener
 					</h6>
 					<p>
-						Shrinkly allows a user to input any web URL and receive a shortened URL that redirects to that page. The service is very similar to other services such as bit.ly and tinyurl.cc. Users may choose to create a custom short URL. Users may also choose to have their short URL re-direct to an intermediary page that displays the original long URL for security purposes. Shrinkly was built with the MERN JavaScript stack (MongoDB, Express.js, ReactJS, Node.js). The application is styled with Bulma.
+						Shrinkly allows a user to input any web URL and receive
+						a shortened URL that redirects to that page. The service
+						is very similar to other services such as bit.ly and
+						tinyurl.cc. Users may choose to create a custom short
+						URL. Users may also choose to have their short URL
+						re-direct to an intermediary page that displays the
+						original long URL for security purposes. Shrinkly was
+						built with the MERN JavaScript stack (MongoDB,
+						Express.js, ReactJS, Node.js). The application is styled
+						with Bulma.
 					</p>
 					<p>
 						Try out the app
 						<a
-						href="https://shrinkly-url-shortener.herokuapp.com"
-						target="_blank"
-						>here!</a
+							href="https://shrinkly-url-shortener.herokuapp.com"
+							target="_blank"
+							>here!</a
 						>
 						<br />
 						View the source code
@@ -300,7 +306,7 @@
 					<img
 						src="./images/shuttle-scheduler.png"
 						class="mobile-picture img-fluid"
-						alt="..."
+						alt="shuttle-scheduler-screenshot"
 					/>
 				</div>
 				<div class="col-auto col-sm-6">
@@ -312,7 +318,16 @@
 						>
 					</h4>
 					<p>
-						Rather than having to manually cross reference the shuttle bus schedule and Google Maps for travel times, you can use the Shuttle Bus Scheduler to automatically create an itinerary for you. Users can provide a desired departure time and their current location, and the Shuttle Bus Scheduler will check the schedule and the user's current location to calculate a route. The scheduler also checks traffic data provided by the Google Directions API to calculate the estimated travel time.
+						Rather than having to manually cross reference the
+						shuttle bus schedule and Google Maps for travel times,
+						you can use the Shuttle Bus Scheduler to automatically
+						create an itinerary for you. Users can provide a desired
+						departure time and their current location, and the
+						Shuttle Bus Scheduler will check the schedule and the
+						user's current location to calculate a route. The
+						scheduler also checks traffic data provided by the
+						Google Directions API to calculate the estimated travel
+						time.
 					</p>
 					<p>
 						View the source code
@@ -352,7 +367,7 @@
 
 			<div class="row portfolio-item">
 				<div class="col col-sm-6 text-center">
-					<span class="emoji">👋</span></p>
+					<span class="emoji">👋</span>
 				</div>
 				<div class="col-auto col-sm-6">
 					<h4>
@@ -363,15 +378,16 @@
 						>
 					</h4>
 					<p>
-						This static website is built with HTML and CSS. It uses the Bootstrap CSS framework to create a reponsive mobile interface. The website files are being served from a Google App Engine instance.
+						This static website is built with HTML and CSS. It uses
+						the Bootstrap CSS framework to create a reponsive mobile
+						interface. The website files are being served from a
+						Google App Engine instance.
 					</p>
 					<br />
 					<br />
 					<p>
-						Click 
-						<a
-							href="https://www.mattrh.com"
-							target="_blank"
+						Click
+						<a href="https://www.mattrh.com" target="_blank"
 							>here</a
 						>
 						to visit
@@ -416,7 +432,15 @@
 						>
 					</h4>
 					<p>
-						Built in Java using the JavaFX framework, this program allows you to create drawings and pre-defined shapes on a canvas, similar to Microsoft Paint. Object-oriented design was closely followed, employing the MVC architecture pattern and design patterns such as the Command and Strategy design pattern. These design patterns allowed features such as "Undo" and "Redo" to be easily implemented. Users may also click and drag to move shapes that have already been drawn on the canvas.
+						Built in Java using the JavaFX framework, this program
+						allows you to create drawings and pre-defined shapes on
+						a canvas, similar to Microsoft Paint. Object-oriented
+						design was closely followed, employing the MVC
+						architecture pattern and design patterns such as the
+						Command and Strategy design pattern. These design
+						patterns allowed features such as "Undo" and "Redo" to
+						be easily implemented. Users may also click and drag to
+						move shapes that have already been drawn on the canvas.
 					</p>
 					<p>
 						Source code not public
@@ -433,4 +457,19 @@
 			</div>
 		</div>
 	</body>
+	<script
+		src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+		integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+		integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+		crossorigin="anonymous"
+	></script>
+	<script
+		src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+		integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+		crossorigin="anonymous"
+	></script>
 </html>

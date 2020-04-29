@@ -7,8 +7,34 @@ handlers:
   static_files: www/index.html
   upload: www/index.html
   secure: always
+  expiration: "1d"
+
+- url: /about
+  static_files: www/index.html
+  upload: www/index.html
+  secure: always
+  expiration: "1d"
+
+- url: /portfolio
+  static_files: www/portfolio.html
+  upload: www/portfolio.html
+  secure: always
+  expiration: "1d"
+
+- url: /blog
+  static_files: www/blog.html
+  upload: www/blog.html
+  secure: always
+  expiration: "1d"
+
+- url: /css/(.*)
+  static_files: www/css\1
+  upload: www/css/(.*)
+  secure: always
+  expiration: "1d"
 
 - url: /(.*)
   static_files: www/\1
   upload: www/(.*)
   secure: always
+  expiration: "1d"
