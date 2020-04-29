@@ -120,3 +120,29 @@ ul.timeline > li:before {
 	z-index: 400;
 }
 
+.site-footer {
+	margin-top: 70px;
+	margin-bottom: 120px;
+	max-width: 900px;
+}
+
+#left-list {
+	padding-left: 30px;
+}
+
+#right-list {
+	padding-right: 30px;
+}
+
+.footer-links {
+	padding-left: 0;
+	list-style: none;
+}
+
+.site-footer a {
+	color: #a3a3a3;
+}
+.site-footer a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}

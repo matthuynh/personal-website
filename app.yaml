@@ -9,6 +9,12 @@ handlers:
   secure: always
   expiration: "1d"
 
+- url: /index
+  static_files: www/index.html
+  upload: www/index.html
+  secure: always
+  expiration: "1d"
+
 - url: /about
   static_files: www/index.html
   upload: www/index.html
@@ -24,12 +30,6 @@ handlers:
 - url: /blog
   static_files: www/blog.html
   upload: www/blog.html
-  secure: always
-  expiration: "1d"
-
-- url: /css/(.*)
-  static_files: www/css\1
-  upload: www/css/(.*)
   secure: always
   expiration: "1d"
 

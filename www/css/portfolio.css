@@ -98,3 +98,30 @@ hr {
 	width: 70%;
     background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
 }
+
+.site-footer {
+	margin-top: 110px;
+	margin-bottom: 120px;
+	max-width: 900px;
+}
+
+#left-list {
+	padding-left: 30px;
+}
+
+#right-list {
+	padding-right: 30px;
+}
+
+.footer-links {
+	padding-left: 0;
+	list-style: none;
+}
+
+.site-footer a {
+	color: #a3a3a3;
+}
+.site-footer a:hover {
+	color: #FFFFFF;
+	text-decoration: none;
+}
