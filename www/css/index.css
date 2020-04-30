@@ -1,6 +1,6 @@
 body {
-	background-color: #231F20;
-	color: #FFFFFF;
+	background-color: #231f20;
+	color: #ffffff;
 }
 
 /* Gives extra padding to anchor elements -- compensates for the fixed navbar behaviour */
@@ -11,7 +11,7 @@ body {
 .navbar-default {
 	max-width: 900px;
 	background-image: none;
-	background-color: #231F20 !important;
+	background-color: #231f20 !important;
 }
 
 .nav-item a.active {
@@ -25,9 +25,15 @@ body {
 	}
 	.navbar-toggler {
 		background-color: #3b3335;
+		/* margin-top: 10px;
+		margin-left: 10px; */
 	}
 	.mobile-navbar {
 		background-color: transparent !important;
+		/* TODO: This width value is hardcoded, and depends on the longest word in navbar */
+		width: 135px;
+		margin-left: 0px;
+		margin-top: 0px;
 	}
 	#mobile-navbar-items-top {
 		background-color: #3b3335;
@@ -42,7 +48,25 @@ body {
 		margin-right: 70%;
 		border-radius: 0px 0px 20px 20px;
 	}
+	#mobile-portfolio-link {
+		padding-right: 15px;
+		padding-top: 15px;
+		text-align: right;
+	}
+	#mobile-portfolio-link a {
+		color: #a3a3a3;
+		text-decoration: none;		
+	}
+	#mobile-portfolio-link a:hover{
+		color: #ffffff;
+		text-decoration: none;
+	}
+	/* Disables collapsing animation */
+	.collapsing {
+		transition: none !important;
+	}
 }
+
 
 #intro-blurb {
 	margin-bottom: 20px;
@@ -101,7 +125,6 @@ ul.timeline:before {
 	left: 29px;
 	width: 2px;
 	height: 100%;
-	z-index: 400;
 }
 ul.timeline > li {
 	margin: 20px 0;
@@ -113,16 +136,15 @@ ul.timeline > li:before {
 	display: inline-block;
 	position: absolute;
 	border-radius: 50%;
-    border: 3px solid #5cb85c;
+	border: 3px solid #5cb85c;
 	left: 20px;
 	width: 20px;
 	height: 20px;
-	z-index: 400;
 }
 
 .site-footer {
 	margin-top: 70px;
-	margin-bottom: 120px;
+	margin-bottom: 80px;
 	max-width: 900px;
 }
 
@@ -143,6 +165,6 @@ ul.timeline > li:before {
 	color: #a3a3a3;
 }
 .site-footer a:hover {
-	color: #FFFFFF;
+	color: #ffffff;
 	text-decoration: none;
 }

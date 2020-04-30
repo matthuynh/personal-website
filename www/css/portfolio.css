@@ -1,12 +1,12 @@
 body {
-	background-color: #231F20;
-	color: #FFFFFF;
+	background-color: #231f20;
+	color: #ffffff;
 }
 
 .navbar-default {
 	max-width: 900px;
 	background-image: none;
-	background-color: #231F20 !important;
+	background-color: #231f20 !important;
 }
 
 .nav-item a.active {
@@ -55,8 +55,9 @@ body {
 	max-width: 900px;
 }
 
-.mobile-picture {
-	padding-top: 20px;
+#section-3 {
+	padding-top: 65px;
+	max-width: 900px;
 }
 
 #harmoney-screenshot {
@@ -67,7 +68,9 @@ body {
 	.mobile-picture {
 		/* width: 90%; */
 		text-align: center;
-		padding-bottom: 20px;
+	}	
+	.body-paragraph {
+		padding-top: 20px;
 	}
 }
 
@@ -96,7 +99,45 @@ hr {
 	border: 0;
 	height: 1px;
 	width: 70%;
-    background-image: linear-gradient(to right, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.75), rgba(255, 255, 255, 0));
+	background-image: linear-gradient(
+		to right,
+		rgba(255, 255, 255, 0),
+		rgba(255, 255, 255, 0.75),
+		rgba(255, 255, 255, 0)
+	);
+}
+
+.languages-table {
+	color: white;
+	/* max-width: 600px; */
+}
+
+.languages-table tr {
+	margin-bottom: 0px !important;
+}
+
+.language-name {
+	color: white;
+}
+
+.language-proficiency {
+	text-align: center;
+}
+
+.proficiency-badge {
+	text-align: left;
+}
+
+.badge-proficient {
+	background-color: #004d1d;
+}
+
+.badge-experienced {
+	background-color: #47914b;
+}
+
+.badge-familiar {
+	background-color: #1757b8;
 }
 
 .site-footer {
@@ -122,6 +163,6 @@ hr {
 	color: #a3a3a3;
 }
 .site-footer a:hover {
-	color: #FFFFFF;
+	color: #ffffff;
 	text-decoration: none;
 }
