@@ -22,7 +22,11 @@ body {
 		background-color: #3b3335;
 	}
 	.mobile-navbar {
-		background-color: transparent !important;
+        background-color: transparent !important;
+        /* TODO: This width value is hardcoded, and depends on the longest word in navbar */
+		width: 135px;
+		margin-left: 0px;
+		margin-top: 0px;
 	}
 	#mobile-navbar-items-top {
 		background-color: #3b3335;
@@ -31,12 +35,16 @@ body {
 		border-radius: 0px 20px 0px 0px;
 	}
 	#mobile-navbar-items-bottom {
-		background-color: #3b3335;
+        background-color: #3b3335;
 		padding: 20px;
 		margin-top: -30px;
 		margin-right: 70%;
 		border-radius: 0px 0px 20px 20px;
-	}
+    }
+    /* Disables collapsing animation */
+    .collapsing {
+        transition: none !important;
+    }
 }
 
 #section-1 {

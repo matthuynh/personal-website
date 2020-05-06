@@ -25,8 +25,6 @@ body {
 	}
 	.navbar-toggler {
 		background-color: #3b3335;
-		/* margin-top: 10px;
-		margin-left: 10px; */
 	}
 	.mobile-navbar {
 		background-color: transparent !important;
@@ -48,9 +46,13 @@ body {
 		margin-right: 70%;
 		border-radius: 0px 0px 20px 20px;
 	}
+	/* Disables collapsing animation */
+	.collapsing {
+		transition: none !important;
+	}
 	#mobile-portfolio-link {
 		padding-right: 15px;
-		padding-top: 15px;
+		padding-top: 20px;
 		text-align: right;
 	}
 	#mobile-portfolio-link a {
@@ -60,10 +62,6 @@ body {
 	#mobile-portfolio-link a:hover{
 		color: #ffffff;
 		text-decoration: none;
-	}
-	/* Disables collapsing animation */
-	.collapsing {
-		transition: none !important;
 	}
 }
 
